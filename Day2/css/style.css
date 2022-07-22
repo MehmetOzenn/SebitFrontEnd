@@ -1,0 +1,43 @@
+header {background-color: rgb(245, 131, 131);}
+header .background{display: flex;justify-content: space-between;padding: 10px 20px;align-items: center;max-width: 1200px;margin: 0 auto; }
+header .logo { }
+header .logo .logoImg {max-width: 100px; }
+header .navbar {display: flex; }
+header .navbar .navItem { list-style: none;margin-right: 10px;color: #354259;font-weight: 600;padding: 3px;margin-right: 2px;border-bottom: 1px solid transparent;}
+header .navbar .navItem:hover{color: #354259c6;transition: linear .2s;border-color: #354259c6;}
+
+.banner {}
+.banner .overController{position: relative;display: flex;justify-content: center;align-items: center;text-align: center; height: 400px;background-color: #0000007d;}
+.banner .bannerText { }
+.banner .bannerText .bannerHeader {padding: 30px 0 20px 0;font-size: 28px;color: white;letter-spacing: 1px; }
+.banner .bannerText .bannerInfo {max-width: 600px;text-align: center;margin: 0 auto;color: white;letter-spacing: 0.5px;line-height: 22px ; }
+
+.slideArea {background-color: rgb(245 131 131 / 89%); }
+.slideArea .sliderPosition { padding: 30px;}
+.slideArea .sliderPosition .sliderItems {max-width: 1000px;margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: space-around; }
+.slideArea .sliderPosition .sliderItems .sliderElement { margin: 10px;border: 1px dashed black;padding: 23px;border-radius: 20px;display: flex;flex-direction: column;align-items: center; }
+.slideArea .sliderPosition .sliderItems .sliderElement .sliderImg { }
+.slideArea .sliderPosition .sliderItems .sliderElement .sliderImg .imgItem {max-width: 120px; }
+.slideArea .sliderPosition .sliderItems .sliderElement .productName {color: red;margin-top: 10px;font-size: 23px; }
+.slideArea .sliderPosition .sliderItems .sliderElement .productInfo {margin-top: 10px;text-align: center; }
+.slideArea .sliderPosition .sliderItems .sliderElement .productPrice {color: red;margin-top: 10px;font-size: 20px; }
+.slideArea .sliderPosition .sliderItems .sliderElement .productPrice .italicForm { font-style: italic;color: red;}
+.slideArea .sliderPosition .sliderItems .sliderElement .btnStyle {margin-top: 20px; background-color: lime;text-align: center;padding: 10px 22px;border-radius: 20px;outline-style: none;border: 1px solid lime; }
+
+footer {background-color: #0000007d;color: wheat;height: 93px; }
+footer .footerItems {position: relative;display: flex;align-items: center;width: 100%; }
+footer .footerItems .logoArea { position: absolute;left: 50%;transform:translateX(-50%);margin-top: 20px;}
+footer .footerItems .logoArea .logoImg {max-width: 140px; }
+footer .footerItems .footerItems {display: flex;justify-content: space-between;flex-wrap: wrap;margin-top: 20px; }
+footer .footerItems .footerItems .linkPosition {min-width: 48%;margin-top: 10px;text-align: center; }
+footer .footerItems .footerItems .footerLınk {color: wheat;}
+@media only screen and (max-width: 900px) {
+    .slideArea .sliderPosition .sliderItems .sliderElement{width: 37%;}
+}
+@media only screen and (max-width: 600px) {
+    header .navbar{overflow-x: scroll;}
+    header .logo .logoImg{max-width: 80px;}
+    header .navbar::-webkit-scrollbar{width: 0;}
+    .banner .bannerText .bannerInfo{max-width: 500px;}
+    .slideArea .sliderPosition .sliderItems .sliderElement{width: 60%;}
+}
